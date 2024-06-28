@@ -1,0 +1,787 @@
+// Шрифты
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue.ttf');
+}
+
+body {
+    margin: 0;
+}
+
+.menu-button-container {
+    display: none;
+}
+
+// logo
+
+#logo {
+    opacity: 0;
+    transition: 1s;
+    img {
+        height: 5vw;
+    }
+}
+
+#logo.visiblelogo {
+    opacity: 1;
+}
+
+// TITILE
+
+.title {
+    font-size: 3em;
+    margin: auto;
+    font-family: BebasNeue;
+    width: fit-content;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 10%;
+
+    >p {
+        margin:0;
+    }
+
+}
+
+.title::after {
+    background-repeat: no-repeat;
+    height: 1em;
+    background-size: contain;
+    width: 100%;
+    background-image: url("../imgs/goldline.png");
+    content: "";
+    display: block;
+
+}
+
+
+// Header
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    font-family: BebasNeue;
+    font-size: 1.5vw;
+
+    .menu {
+        padding-right: 3em;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+
+            list-style: none;
+
+            >div {
+                border: solid 0.1em #d3c1a2;
+                border-radius: 5px;
+                padding: 0.1em 0.4em;
+                
+            }
+        }
+
+    }
+}
+
+// Sections
+
+
+.sect1 {
+
+    background-image: url("../imgs/bg.png");
+    background-size: cover;
+
+    height: 100%;
+
+}
+
+.deerimage {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    >img {  
+
+        z-index: 1;
+        width: 45vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+ 
+    }
+}
+
+.s1 {
+    position: absolute;
+
+    overflow: clip;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+
+    .s1info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6vw;
+
+    }
+
+}
+
+
+/*Lesnoe*/
+
+
+.Lesnoe{
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-columns: 0.1fr 1fr;
+
+    justify-content: center;
+    align-items: end;
+
+    font-family: BebasNeue;
+
+    position: relative;
+
+    right: 9vw;
+    top: 5vw;
+
+    height: max-content;
+
+}
+
+.Lesnoe>p {
+
+    justify-self: center;
+    font-size: 1.3vw;
+    padding-left: 2.5vw;
+    margin: 0;
+  }
+
+.L {
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    img {
+        height: 13vw;
+    }
+}
+
+.esnoe {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    img {
+        width: 25vw;
+    }
+    
+}
+
+.under {
+    font-size: 2vw;
+
+    padding-left: 11.3vw;
+    padding-top: 0.5vw;
+
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+
+/* description */
+
+.block {
+    position: relative;
+    right: 9vw;
+}
+
+
+.description {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    width: max-content;
+    align-items: center;
+}
+
+.description>* {
+    display: inline-block;
+
+}
+
+.pricenum {
+    width: max-content;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.pricetext {
+    font-family: Montserrat;
+    font-size: 1vw;
+    grid-column: 2/3;
+}
+
+
+.pricetext>* {
+    margin: 0;
+}
+
+.border {
+    grid-row: 1/3;
+    width: max-content;
+    
+    img {
+        width: 1vw;
+    }
+    
+}
+
+.d {
+    color: gold;
+    font-weight: 500;
+}
+
+.p1, .p2, .p3 {
+    margin: 0;
+    color: #c7af89;
+}
+
+.p1 {
+    float: left;
+    font-size: 1vw;
+}
+
+.p2 {
+    font-size: 3rem;
+    font-size: 2.5vw;
+}
+
+.p3 {
+    float: right;
+    font-size: 1vw;
+}
+
+/* border */
+
+
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 38vw;
+    left: 20%;
+    width: 80%;
+    overflow: clip;
+
+    >div>img {
+        width: 100%;
+    }
+}
+
+.box>div:nth-child(2) {
+    background-color: #d3c1a2;
+    height: 4vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10%;
+    padding-left: 10%;
+
+    
+}
+
+.line>p {
+    font-family: "BebasNeue";
+    font-size: 2vw;
+}
+
+.line>div {
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    height: 80%;
+    width: 8vw;
+    background-color: white;
+    border-radius: 3%;
+}
+
+.line>div:last-child {
+    display: flex;
+    align-items: center;
+    background-color: gold;
+    font-family: "BebasNeue";
+}
+
+//
+// PART 2
+//
+
+.rooms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin: auto 0;
+
+    .roomim>img {
+        width: 100%;
+    }
+
+    .roomdescp {
+        width: 50%;
+        height: 30%;
+        background-color: #EBEEEA;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 15%;
+        >div {
+            display: flex;
+            height: 50%;
+        
+        }
+
+        .rd1 {
+            width: 30%;
+            text-align: center;
+            font-family: BebasNeue;
+            padding: 5%;
+        }
+
+
+        .rd2 {
+            width: 70%;
+            padding: 5%;
+        }
+        .rd3 {
+            width: 70%;
+            border-left: solid green 0.3em;
+            border-top: solid #C4C4C4 0.1em;
+        }
+
+        .rd4 {
+
+            width: 30%;
+            background-color: gold;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        
+    }
+    
+}
+
+// slider
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    background-image: url("../imgs/frameslider.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+
+  .card-container {
+    display: flex;
+    padding: 5%;
+
+  }
+
+  .card {
+    flex: 0 0 100%;
+    display: none; 
+    width: 100%;
+  }
+
+  .card>img {
+    max-width: 50%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  .card h2 {
+    margin-top: 0;
+  }
+
+  .card p {
+    color: #666;
+  }
+
+  .card.active {
+    display: flex; 
+  }
+
+  .slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 20px;
+    color: #333;
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
+
+
+
+//
+// PART 3
+//
+
+
+.s3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url("../imgs/bg2.jpg");
+}
+
+
+.backimg {
+    position: absolute;
+    width: 40vw;
+
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Montserrat;
+    font-size: 1vw;
+
+    background-image: url("../imgs/frame.png");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 30vw;
+    padding: 5vw;
+    z-index: 1;
+}
+
+.frame>h1 {
+    font-size: 1vw;
+}
+
+.framebutton {
+    background-color: gold;
+    position: relative;
+    font-family: BebasNeue;
+    border-radius: 5%;
+    
+    font-size: 1.5vw;
+    vertical-align: middle;
+    top: 4.9vw;
+    padding: 0.5vw;
+
+}
+
+.sidedeer {
+    position: absolute;
+    left: 65vw;
+    z-index: 1;
+}
+
+
+///
+/// PART 4
+/// 
+
+.s4 {
+    height: fit-content;
+}
+
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1em auto;
+    width: 80%;
+    justify-content: space-around;
+}
+
+
+.calendar>div {
+    background-color: rgb(247, 247, 247);
+    width: 10em;
+    margin: 1em;
+
+}
+
+
+.calendar>div>img {
+    width:100%;
+    height: 8em;
+
+}
+
+.calendar p {
+    font-family: Montserrat;
+    margin: 0;
+}
+
+.calendar>div>div {
+    margin: 1em;
+}
+
+.calendar p:first-child {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.calendar p:nth-child(3) {
+    font-family: BebasNeue;
+    font-size: 1.5em;
+}
+
+///
+/// 5 БЛОК
+/// 
+
+
+.main-content, .map {
+    display: inline-block;
+}
+
+.transportation {
+    display: flex;
+    gap: 2em;
+}
+
+.transportation p:first-child {
+    font-family: BebasNeue;
+}
+
+.transportation p:last-child {
+    width: 50%;
+}
+
+.content {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    gap: 5em;
+}
+
+
+.contact-card {
+    display: flex;
+    background-image: url("../imgs/frameslider.png");
+    margin-top: 3em;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 3em;
+    gap: 3em;
+}
+
+.social-icons {
+    >img {
+        width: 2em;
+    }
+}
+
+.icon>img {
+    width: 5em;
+}
+
+// 
+// АДАПТИВ
+//
+
+@media screen and (max-width: 500px) {
+
+
+    // burger
+
+    .menu-button-container {
+        display: block;
+    }
+    header {
+        height: 8%;
+        >.menu {
+            padding-right: 0;
+        }
+    }
+
+    .title {
+        margin-top: 15%;
+    }
+    .menu {
+        background-color: #d3c1a2;
+        display: none;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        padding-top: 20%;
+        height: 200vh;
+        >ul {
+            flex-direction: column;
+            width: 100%;
+            font-size: 5em;
+            gap: 1em;
+        }
+    }
+
+    .deerimage>img {
+        display: none;
+    }
+
+    .s1 {
+        top: 20%;
+        overflow: visible;
+    }
+
+   .s1>.s1info {
+    align-items: center;
+    }
+
+    .Lesnoe {
+        left: 0;
+        transform: scale(2.5);
+    }
+
+    .block {
+        margin-top: 30%;
+        transform: scale(3.5);
+        right: 0;
+    }
+
+    .box {
+        top: 80%;
+        width: 100%;
+        left: 0;
+        >div:nth-child(2) {
+            height: 20vw;
+            >p {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+
+    // 2 section
+
+    .s2 {
+        overflow-x: hidden;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+    
+    .rooms {
+        grid-template-columns: 1fr;
+    }
+
+    // 3 section
+    
+    .frame {
+        height: 60%;
+        width: 100%;
+        >h1 {
+            font-size: 4em;
+        }
+        >p {
+            font-size: 3em;
+        }
+    };
+
+    .framebutton {
+        font-size: 7vw;
+        padding: 0.3em;
+
+    }
+
+    .sidedeer {
+        display: none;
+    }
+
+    // 4 section
+
+    .calendar {
+        width: 100%;
+    }
+
+    // 5 section
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+        >.map>iframe {
+            width: 100%;
+        }
+    }
+
+}
+//
+// Animations
+//
+
+.hover-effect {
+    transition: 0.5s;
+}
+
+// BURGER 
+
+.menu-button>img {
+    height: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute
+}
+
+.menu-button-container {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    background-color: #666;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #menu-toggle {
+    display: none;
+    }
+
+    #menu-toggle:checked ~ .menu{
+        display: block;
+    }
